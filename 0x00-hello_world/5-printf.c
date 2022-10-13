@@ -1,6 +1,18 @@
+/*
+ *  * File: 5-printf.c
+ *   * Auth: Zuhair Ahmed
+ *    */
+
 #include <stdio.h>
-void main {
-	char str[] = "with proper grammar, but the outcome is a piece of art,";
-	printf("%s\n", str);
-	return 0;
+
+/**
+ *  * main - Prints "with proper grammar, but the outcome is
+ *   *                a piece of art," followed by a new line.
+ *    *
+ *     * Return: Always 0.
+ *      */
+int main(void)
+{
+	printf("with proper grammar, but the outcome is a piece of art,\n");
+	return (0);
 }
