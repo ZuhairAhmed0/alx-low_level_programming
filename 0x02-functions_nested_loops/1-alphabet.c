@@ -8,7 +8,7 @@
  *
  * Return: Success 0
  */
-itn main(void)
+int main(void)
 {
 	char ch;
 
