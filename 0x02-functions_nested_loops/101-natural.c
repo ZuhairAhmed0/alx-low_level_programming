@@ -12,9 +12,9 @@ int main(void)
 {
 	unsigned long int results;
 	int num;
-	
+
 	results = 0;
-	
+
 	for (num = 0; num < 1024; num++)
 	{
 		if (num % 3 == 0 || num % 5 == 0)
