@@ -17,6 +17,6 @@ int main(void)
 		if (num % 3 == 0 || num % 5 == 0)
 			resluts += num;
 	}
-	printf("%d \n", resluts);
+	printf("%lu\n", resluts);
 	return (0);
 }
