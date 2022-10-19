@@ -6,7 +6,7 @@
  * File: 101-natural.c
  * Auth: Zuhair Ahmed
  */
-void main(void)
+int main(void)
 {
 	int resluts, num;
 
