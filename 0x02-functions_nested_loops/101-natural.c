@@ -5,6 +5,8 @@
  *
  * File: 101-natural.c
  * Auth: Zuhair Ahmed
+ *
+ * Return: Always 0
  */
 int main(void)
 {
@@ -16,4 +18,5 @@ int main(void)
 			resluts += num;
 	}
 	printf("%d \n", resluts);
+	return (0);
 }
