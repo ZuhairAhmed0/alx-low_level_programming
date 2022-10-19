@@ -10,7 +10,8 @@
  */
 int main(void)
 {
-	int resluts, num;
+	unsigned long int results;
+	int num;
 
 	for (num = 0; num < 1024; num++)
 	{
