@@ -17,8 +17,8 @@ int main(void)
 	for (num = 0; num < 1024; num++)
 	{
 		if (num % 3 == 0 || num % 5 == 0)
-			resluts += num;
+			results += num;
 	}
-	printf("%lu\n", resluts);
+	printf("%lu\n", results);
 	return (0);
 }
