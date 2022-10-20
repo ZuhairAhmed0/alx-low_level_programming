@@ -16,11 +16,11 @@ int main(void)
 	{
 		if (i == 1)
 		{
-			printf("%d", i);
+			printf("%d", t1);
 		}
 		if (i == 2)
 		{
-			printf("%d", i);
+			printf("%d", t2);
 		}
 		nextTerm = t1 + t2;
 		t1 = t2;
