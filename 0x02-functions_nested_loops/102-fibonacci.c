@@ -18,7 +18,7 @@ int main(void)
 		nextTerm = t1 + t2;
 		printf("%lu", nextTerm);
 
-		if (i > 49)
+		if (i == 49)
 		{
 			printf("\n");
 		}
@@ -26,6 +26,8 @@ int main(void)
 		{
 			printf(", ");
 		}
+		t1 = t2;
+		t2 = nextTerm;
 	}
 	return (0);
 }
