@@ -2,7 +2,7 @@
 
 /**
  * main - Prints the sum of even-valued Fibonacci sequence
- * 	terms not exceeding 4000000.
+ *	terms not exceeding 4000000.
  * File: 103-fibonacci.c
  * Auth: Zuhair Ahmed
  *
