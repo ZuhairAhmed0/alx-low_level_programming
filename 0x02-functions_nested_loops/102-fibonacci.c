@@ -5,6 +5,8 @@
  *
  * File: 102-fibonacci.c
  * Auth: Zuhair Ahmed
+ *
+ * Return: Always 0
  */
 int main(void)
 {
@@ -27,7 +29,9 @@ int main(void)
 
 		if (i < 50)
 		{
-			printf("\n");
+			printf(", ");
 		}
 	}
+	printf("\n");
+	return (0);
 }
