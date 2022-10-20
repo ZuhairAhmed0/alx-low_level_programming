@@ -13,7 +13,7 @@ int main(void)
 	int i;
 	unsigned long t1 = 0, t2 = 1, nextTerm;
 
-	for (i = 1; i <= 50; i++)
+	for (i = 1; i < 50; i++)
 	{
 		nextTerm = t1 + t2;
 		printf("%lu", nextTerm);
