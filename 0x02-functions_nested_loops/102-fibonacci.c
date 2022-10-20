@@ -25,7 +25,7 @@ int main(void)
 		t2 = nextTerm;
 		printf("%d", nextTerm);
 
-		if (i < n)
+		if (i < 50)
 		{
 			printf("\n");
 		}
