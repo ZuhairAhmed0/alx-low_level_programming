@@ -18,7 +18,7 @@ void more_numbers(void)
 		{
 			if (!(c > 57))
 			{
-				y = i;
+				y = c;
 			}
 			else
 			{
