@@ -10,17 +10,15 @@
  */
 void rev_string(char *s)
 {
-	char str1[strlen(s)], str2[strlen(s)];
-	char *p1, *p2;
+	int leng, index = 0;
+	char tmp;
 
-	str1[strlen(s)] = *s;
-	p1 = str1 + strlen(str1) - 1;
-	p2 = str2;
+	leng = strlen(s);
 
-	while (p1 >= str1)
+	for (index = leng - 1; index >= leng / 2; index--)
 	{
-		*p2 = *p1;
-		*p1--;
+		tmp = s[index];
+		s[index] = s[leng - index - 1];
+		s[leng - index - 1] = tmp;
 	}
-	*p2 = '\0';
 }
