@@ -10,12 +10,11 @@
  */
 void print_rev(char *s)
 {
-	 int leng, g;
+	 int leng;
+	 int g;
 
-	 leng = strlen(s);
-	 for (g = (leng - 1); g >= 0; g--)
-	 {
+	 leng = strlen(s) - 1;
+	 for (g = leng; g >= 0; g++)
 		 _putchar(s[g]);
-	 }
 	 _putchar('\n');
 }

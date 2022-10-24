@@ -13,8 +13,10 @@ void puts2(char *s)
 {
 	int i, len = strlen(s);
 
-	for (i = 0; i < len; (i += 2))
+	for (i = 0; i < len; i++)
 	{
+		if (i % 2 != 0)
+			continue;
 		 _putchar(s[i]);
 	}
 	_putchar('\n');
