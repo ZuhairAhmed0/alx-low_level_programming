@@ -11,17 +11,17 @@
  */
 char *leet(char *ptr)
 {
-	int indx1 = 0, indx2;
-	char leet[8] = {'O', 'L', '?', 'E', 'A', '?', '?', 'T'};
+	int i, j;
+	char a[] = "aAeEoOtTlL";
+	char b[] = "4433007711";
 
-	while (ptr[indx1])
+	for (i = 0; *(ptr + i); i++)
 	{
-		for (indx2 = 0; indx2 <= 7; indx2++)
+		for (j = 0; j <= 9; j++)
 		{
-			if (ptr[indx1] == leet[indx2] || ptr[indx1] - 32 == leet[indx2])
-				ptr[indx1] = indx2 + '0';
+			if (a[j] == *(ptr + i))
+				*(ptr + i) = b[j];
 		}
-		indx1++;
 	}
 	return (ptr);
 }
