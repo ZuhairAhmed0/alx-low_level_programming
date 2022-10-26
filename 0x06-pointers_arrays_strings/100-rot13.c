@@ -11,19 +11,19 @@
  */
 char *rot13(char *ptr)
 {
-	int i = 0;
+	int i, j;
+	char a[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char b[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 
-	while (*(ptr + i))
-	{
-		if (*(ptr + i) >= 'A' && *(ptr + i) <= 'Z')
+	for (i = 0; *(ptr + i); i++)
+		for (j = 0; j < 52; j++)
 		{
-			*(ptr + i) = 'A' + (*(ptr + i) - 'A' + 13) % 26;
+			if (a[j] == *(ptr + i))
+			{
+				*(ptr + i) = b[j];
+				break;
+			}
+
 		}
-		else if (*(ptr + i) >= 'a' && *(ptr + i) <= 'z')
-		{
-			*(ptr + i) = 'a' + (*(ptr + i) - 'a' + 13) % 26;
-		}
-		i++;
-	}
 	return (ptr);
 }
