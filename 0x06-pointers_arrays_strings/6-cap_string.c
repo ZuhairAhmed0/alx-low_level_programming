@@ -13,28 +13,27 @@ char *cap_string(char *ptr)
 {
 	int i;
 
-	for (i = 0; ptr[i] != '\0'; i++)
+	while (ptr[i])
 	{
-		if (i == 0)
-		{
-			if ((ptr[i] >= 'a' && ptr[i] <= 'z'))
-				ptr[i] = ptr[i] - 32;
-			continue;
-		}
-		if (ptr[i] == ' ')
-		{
-			++i;
-			if (ptr[i] >= 'a' && ptr[i] <= 'z')
-			{
-				ptr[i] = ptr[i] - 32;
-				continue;
-			}
-		}
-		else
-		{
-			if (ptr[i] >= 'A' && ptr[i] <= 'Z')
-				ptr[i] = ptr[i] + 32;
-		}
+		while (!(ptr[i] >= 'a' && ptr[i] <= 'z'))
+			i++;
+
+		if (ptr[i - 1] == ' ' ||
+				ptr[i - 1] == '\t' ||
+				ptr[i - 1] == '\n' ||
+				ptr[i - 1] == ',' ||
+				ptr[i - 1] == ';' ||
+				ptr[i - 1] == '.' ||
+				ptr[i - 1] == '!' ||
+				ptr[i - 1] == '?' ||
+				ptr[i - 1] == '"' ||
+				ptr[i - 1] == '(' ||
+				ptr[i - 1] == ')' ||
+				ptr[i - 1] == '{' ||
+				ptr[i - 1] == '}' ||
+				i == 0)
+			ptr[i] -= 32;
+		i++;
 	}
 	return (ptr);
 }
