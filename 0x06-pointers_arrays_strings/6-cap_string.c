@@ -11,7 +11,7 @@
  */
 char *cap_string(char *ptr)
 {
-	int i = 0, g;
+	int i = 0, j;
 	char a[] = " \t\n,;.!?\"(){}";
 
 	while (*(ptr + i))
