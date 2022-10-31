@@ -2,7 +2,7 @@
 
 /**
  * *_strchr - function that locates a character in a string
- * @s: the C string 
+ * @s: the C string
  * @c: character to be searched
  *
  * File: 2-strchr.c
