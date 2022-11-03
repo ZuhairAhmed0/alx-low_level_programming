@@ -20,10 +20,11 @@ int _sqrt_recursion(int n)
 	else if (n == 0)
 		return (1);
 
-	while (j != i)
+	if (j != i)
 	{
 		i = j;
 		j = (n / i + i) / 2;
+		_sqrt_recursion(j-1);
 	}
 	return (j);
 }
