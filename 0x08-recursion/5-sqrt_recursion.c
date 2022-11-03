@@ -24,7 +24,7 @@ int _sqrt_recursion(int n)
 	{
 		i = j;
 		j = (n / i + i) / 2;
-		_sqrt_recursion(j-1);
+		_sqrt_recursion(j - 1);
 	}
 	return (j);
 }
