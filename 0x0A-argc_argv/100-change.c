@@ -5,8 +5,8 @@
  * main - Prints the minimum number of coins to
  *        make change for an amount of money.
  * @argc: The number of arguments supplied to the program.
- * @argv: An array of pointers to the arguments.
- * 
+ * @argv: An array of pointers to the arguments
+ *
  * File: 100-change.c
  * Auth: Zuhair Ahmed
  *
