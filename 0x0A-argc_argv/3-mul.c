@@ -8,7 +8,7 @@
  * File: 3-mul.c
  * Auth: Zuhair Ahmed
  *
- * Return: Always 
+ * Return: Always 0 
  */
 int main(int argc, char *argv[])
 {
