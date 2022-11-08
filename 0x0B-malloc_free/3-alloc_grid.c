@@ -22,7 +22,7 @@ int **alloc_grid(int width, int height)
 
 	twoD = malloc(sizeof(int *) * height);
 
-	if (two == NULL)
+	if (twoD == NULL)
 		return (NULL);
 
 	for (he_i = 0; he_i < height; he_i++)
