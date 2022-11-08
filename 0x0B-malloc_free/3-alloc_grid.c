@@ -17,7 +17,7 @@ int **alloc_grid(int width, int height)
 	int he_i, wi_i;
 	int **twoD;
 
-	if (width == NULL || height == NULL)
+	if (width <= 0 || height <= 0)
 		return (NULL);
 
 	twoD = malloc(sizeof(int *) * height);
