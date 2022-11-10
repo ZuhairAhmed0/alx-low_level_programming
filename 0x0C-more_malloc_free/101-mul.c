@@ -1,12 +1,13 @@
 #include "main.h"
-#include <stdio.h>
-#include <stdlib.h>
 
 /**
  * main - program that multiplies two positive numbers
  *
  * @argc: argument count, must be 3
  * @argv: arguments, argv[1] and argv[2]
+ *
+ * File: 101-mul.c
+ * Auth: Zuhair Ahmed 
  *
  * Return: product of argv[1] by argv[2]
  */
