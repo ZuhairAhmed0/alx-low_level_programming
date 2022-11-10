@@ -1,4 +1,9 @@
-#include "main.h"
+/*
+ * File: 101-mul.c
+ * Auth: Brennan D Baraban
+ */
+
+#include "holberton.h"
 #include <stdlib.h>
 #include <stdio.h>
 
@@ -183,8 +188,6 @@ void add_nums(char *final_prod, char *next_prod, int next_len)
  * @argv: The number of arguments passed to the program.
  * @argc: An array of pointers to the arguments.
  *
- * File: 101-mul.c
- * Auth: Zuhair Ahmed
  * Description: If the number of arguments is incorrect or one number
  *              contains non-digits, the function exits with a status of 98.
  * Return: Always 0.
