@@ -14,20 +14,23 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	char *ptr;
+	void *ptr;
+	char *mem;
 	unsigned int id;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
 
-	ptr = calloc(nmemb, size);
+	ptr = calloc(nmemb * size);
 
 	if (ptr == NULL)
 		return (NULL);
 
-	for (id = 0; id < nmemb; ++id)
+	mem = ptr;
+
+	for (id = 0; id < (nmemb * size); id++)
 	{
-		ptr[id] = '0';
+		mem[id] = '\0';
 	}
 
 	return (ptr);
