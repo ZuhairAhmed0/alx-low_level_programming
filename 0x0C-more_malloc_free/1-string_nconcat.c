@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * str_concat - function that concatenates two strings
+ * string_nconcat - function that concatenates two strings
  * @s1: first string
  * @s2: second string
  * @n: The maximum number
@@ -11,7 +11,7 @@
  *
  * Return: pointer content s1 and s2 or NULL on failure
  */
-char *str_concat(char *s1, char *s2, unsigned int n)
+char string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	int i, idx = 0, len = 0;
 	char *str;
