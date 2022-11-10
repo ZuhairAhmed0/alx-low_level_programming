@@ -11,7 +11,7 @@
  *
  * Return: pointer content s1 and s2 or NULL on failure
  */
-char string_nconcat(char *s1, char *s2, unsigned int n)
+char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	int i, idx = 0, len = 0;
 	char *str;
