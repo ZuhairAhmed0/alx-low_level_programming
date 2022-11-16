@@ -11,12 +11,5 @@
  */
 void print_name(char *name, void (*f)(char *))
 {
-	char *str = f(name);
-	int i;
-
-	for (i = 0; str[i]; i++)
-	{
-		_putchar(str[i]);
-	}
-	_putchar('\n');
+	f(name);
 }
