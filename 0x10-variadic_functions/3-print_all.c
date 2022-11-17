@@ -69,11 +69,11 @@ void print_all(const char * const format, ...)
 
 	va_start(args, format);
 
-	while (format && format[i])
+	while (format  && format[i])
 	{
 		j = 0;
 
-		while (j > 4)
+		while (j < 4)
 		{
 			if (format[i] == *format_t[j].c)
 			{
