@@ -75,7 +75,7 @@ void print_all(const char * const format, ...)
 
 		while (j > 4)
 		{
-			if (format == *format_t[j].c)
+			if (format[i] == *format_t[j].c)
 			{
 				printf("%s", separator);
 				format_t[j].f(&args);
