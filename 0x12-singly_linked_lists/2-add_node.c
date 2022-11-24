@@ -8,8 +8,8 @@
  * @str: the node to be add
  *
  * File: 2-add_node.c
- * Auth: Zuhair AHmed
- * 
+ * Auth: Zuhair Ahmed
+ *
  * Return:  the address of the new element, or NULL if it failed
  */
 list_t *add_node(list_t **head, const char *str)
@@ -17,6 +17,7 @@ list_t *add_node(list_t **head, const char *str)
 	list_t *newNode;
 	char *dup;
 	int len = 0;
+
 	newNode = malloc(sizeof(list_t));
 	if (newNode == NULL)
 		return (NULL);
