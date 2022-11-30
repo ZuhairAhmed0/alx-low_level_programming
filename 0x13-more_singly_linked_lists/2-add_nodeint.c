@@ -4,11 +4,12 @@
 /**
  * add_nodeint - function that adds a new node at the beginning of a listint_t
  * @head: list
- * @h: new node to bt add
+ * @n: new node to bt add
  *
- * File: 3-add_nodeint_end.c
+ * File: 2-add_nodeint.c
  * Auth: Zuhair Ahmed
  *
+ * Return: the address of the new element
  */
 listint_t *add_nodeint(listint_t **head, const int n)
 {
