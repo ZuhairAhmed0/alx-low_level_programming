@@ -1,4 +1,3 @@
-
 #include <string.h>
 #include "hash_tables.h"
 
@@ -13,17 +12,20 @@
 
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
-	unsigned long int bin = 0;
+	unsigned long int idx;
 	hash_node_t pair;
 
-	bin = key_index((const unsigned char) key, (unsigned long int) ht->size);
-	pair = ht->array[bin];
+	if (ht == NULL || key == NULL || *key == '\0')
+		return (NULL)
 
-	while (pair != NULL && pair->key != NULL && strcmp(key, pair->key) > 0)
+	idx = key_index((const unsigned char) key, ht->size);
+
+	if (idx >= ht->size)
+		return (NULL);
+
+	pair = ht->array[idx];
+	while (pair && strcmp(key, pair->key) != 0)
 		pair = pair->next;
 
-	if (pair == NULL || pair->key == NULL || strcmp(key, pair->key) != 0)
-		return (NULL);
-	else
-		return (pair->value);
+	return ((pair == NULL) ? NULL : pair->value);
 }
