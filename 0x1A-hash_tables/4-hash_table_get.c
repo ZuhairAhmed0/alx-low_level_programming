@@ -16,7 +16,7 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	unsigned long int bin = 0;
 	hash_node_t pair;
 
-	bin = key_index(ht->size, key);
+	bin = key_index((const unsigned char) key,(unsigned long int) ht->size);
 	pair = ht->array[bin];
 
 	while (pair != NULL && pair->key != NULL && strcmp(key, pair->key) > 0)
